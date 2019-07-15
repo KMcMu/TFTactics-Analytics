@@ -1,112 +1,421 @@
 <!DOCTYPE html>
-          <html lang="en">
-            <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-              <meta http-equiv="X-UA-Compatible" content="ie=edge">
-              <link rel="apple-touch-icon" sizes="180x180" href="/images/ugg/favicon/apple-touch-icon.png">
-              <link rel="icon" type="image/png" sizes="32x32" href="/images/ugg/favicon/favicon-32x32.png">
-              <link rel="icon" type="image/png" sizes="16x16" href="/images/ugg/favicon/favicon-16x16.png">
-              <link rel="stylesheet" href="https://static.u.gg/lol/static/css/main.1583c1ad4a97a8229cba.css">
-              <!-- Desktop/Mobile Redirect -->
-              <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
-              <script>
-                var md = new MobileDetect(window.navigator.userAgent);
-                if (window.location.hostname === "u.gg" && md.mobile()) {
-                  window.location.href = "https://m.u.gg" + window.location.pathname + window.location.search;
-                } else if (window.location.hostname === "m.u.gg" && !md.mobile()) {
-                  window.location.href = "https://u.gg" + window.location.pathname + window.location.search;
-                }
-              </script>
-              <!-- End Desktop/Mobile Redirect -->
+<html lang="en">
 
-              <!-- Recaptcha v3 -->
-              <script src="https://www.google.com/recaptcha/api.js?render=6LcG55QUAAAAAKFtQFMv722bD4jCZETOTdsPXkH_"></script>
-              <!-- End Recaptcha v3 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/ugg/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ugg/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ugg/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://static.u.gg/lol/static/css/main.1583c1ad4a97a8229cba.css">
+  <!-- Desktop/Mobile Redirect -->
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
+  <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (window.location.hostname === "u.gg" && md.mobile()) {
+      window.location.href = "https://m.u.gg" + window.location.pathname + window.location.search;
+    } else if (window.location.hostname === "m.u.gg" && !md.mobile()) {
+      window.location.href = "https://u.gg" + window.location.pathname + window.location.search;
+    }
+  </script>
+  <!-- End Desktop/Mobile Redirect -->
 
-              <style>
-                .async-hide {
-                  opacity: 0 !important
-                }
-              </style>
+  <!-- Recaptcha v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcG55QUAAAAAKFtQFMv722bD4jCZETOTdsPXkH_"></script>
+  <!-- End Recaptcha v3 -->
 
-              <!-- Ad Dependencies -->
-            	<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
-              <script>
-                var googletag = googletag || {};
-                googletag.cmd = googletag.cmd || [];
+  <style>
+    .async-hide {
+      opacity: 0 !important
+    }
+  </style>
 
-                var pbjs = pbjs || {};
-                pbjs.que = pbjs.que || [];
-              </script>
-              <script>
-                //load the apstag.js library
-                !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
-              </script>
-              <script async src="//js-sec.indexww.com/ht/p/189243-276439567805785.js"></script>
-              <!-- End Ad Dependencies -->
+  <!-- Ad Dependencies -->
+  <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
 
-              <!-- Payment Dependencies -->
-              <script src="https://js.stripe.com/v3/"></script>
-              <!-- End Payment Dependencies -->
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+  </script>
+  <script>
+    //load the apstag.js library
+    ! function (a9, a, p, s, t, A, g) {
+      if (a[a9]) return;
 
-              <link rel="shortcut icon" href="/images/ugg/favicon/favicon.ico?v=1.0" type='image/x-icon'>
-              <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-              <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
-              <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.u.gg" data-react-helmet="true" />
-              <link type="application/opensearchdescription+xml" rel="search" href="/opensearchdescription.xml" />
-              <link rel="apple-touch-icon" sizes="180x180" href="/images/ugg/favicon/apple-touch-icon.png">
-              <link rel="icon" type="image/png" sizes="32x32" href="/images/ugg/favicon/favicon-32x32.png">
-              <link rel="icon" type="image/png" sizes="16x16" href="/images/ugg/favicon/favicon-16x16.png">
-              <link rel="manifest" href="/site.webmanifest">
-              <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      function q(c, r) {
+        a[a9]._Q.push([c, r])
+      }
+      a[a9] = {
+        init: function () {
+          q("i", arguments)
+        },
+        fetchBids: function () {
+          q("f", arguments)
+        },
+        setDisplayBids: function () {},
+        targetingKeys: function () {
+          return []
+        },
+        _Q: []
+      };
+      A = p.createElement(s);
+      A.async = !0;
+      A.src = t;
+      g = p.getElementsByTagName(s)[0];
+      g.parentNode.insertBefore(A, g)
+    }("apstag", window, document, "script", "//c.amazon-adsystem.com/aax2/apstag.js");
+  </script>
+  <script async src="//js-sec.indexww.com/ht/p/189243-276439567805785.js"></script>
+  <!-- End Ad Dependencies -->
 
-              <!-- Fix Firefox security issues (development only) -->
-              <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-              <!-- End Fix Firefox security issues  -->
+  <!-- Payment Dependencies -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <!-- End Payment Dependencies -->
 
-              <!-- Meta Tags -->
-              <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-              <meta name="google-site-verification" content="j4zQiYJnbrJpE0HwG-tyF8p1fGI2v57Mpi_Rggsy7g0" />
-              <meta name="google-site-verification" content="oxacdzrDmNQf5lF_X6iNVET6lQLONWGtDd5fJj41V3U" />
-              <meta name="msapplication-TileColor" content="#da532c" />
-              <meta name="theme-color" content="#ffffff" />
-              <!-- End Meta Tags -->
+  <link rel="shortcut icon" href="/images/ugg/favicon/favicon.ico?v=1.0" type='image/x-icon'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.u.gg" data-react-helmet="true" />
+  <link type="application/opensearchdescription+xml" rel="search" href="/opensearchdescription.xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/ugg/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ugg/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ugg/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-              <title data-react-helmet="true"></title>
+  <!-- Fix Firefox security issues (development only) -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <!-- End Fix Firefox security issues  -->
 
-            </head>
-            <body>
-              <div id="root"><div class="desktop-container"><div class="modal-manager"></div><div style="display:none;left:0;right:0;top:auto;bottom:0" class="tooltip-container"><div style="postion:relative"><div style="left:0;right:0" class="arrow arrow-down"></div></div></div><div id="masthead" class=" "><div class="logo-nav"><div><div class="icon"></div></div><a style="display:flex;align-items:center" href="/"><img width="90" class="ugg-logo" src="https://static.u.gg/lol/static/images/ugg/logo/ugg-logo.svg" alt="U.GG"/></a></div><div style="position:relative;width:632px;height:36px"><div class="masthead-ugg-search-bar"><div class="react-autosuggest__container react-autosuggest__container_placeholder"></div><div class="autosuggest-button"><div></div></div></div><div id="search-bar-notification" class="notification_hide"><a class="thumbnail" href="https://www.youtube.com/watch?v=pLxF_dgXCkM" target="_blank" rel="noopener noreferrer"><img src="https://static.u.gg/lol/static/images/notification/tot_announcement.png" alt="This or That Thumbnail"/></a><div class="dialogue"><img style="margin-left:18px;margin-right:12px" src="https://static.u.gg/lol/static/images/notification/riot-logo.svg" alt="Riot Games logo"/><div style="width:350px"><strong>Riot uses U.GG just like you do. </strong><span>As part of the official partnership, see our stats every week on This or That.</span></div></div><div class="close-notification"><div class="react-svg"></div></div></div></div><div style="display:flex;align-items:center"><div class="nav-dropdown"></div></div></div><div id="page-content"><div id="side-nav-container" class="collapsed"><div id="side-nav" class="collapsed "><div class="site-navigator"><a class="side-link side-nav-title" href="/"><div data-for="Home-tooltip" data-tip="Home"><div class="icon"></div><div class="__react_component_tooltip place-top type-dark " id="Home-tooltip" data-id="tooltip"></div></div><span>Home</span></a><a class="side-link side-nav-title" href="/lol/tier-list"><div data-for="Tier List-tooltip" data-tip="Tier List"><div class="icon"></div><div class="__react_component_tooltip place-top type-dark " id="Tier List-tooltip" data-id="tooltip"></div></div><span>Tier List</span></a><a class="side-link side-nav-title" href="/lol/pro-builds"><div data-for="Pro Builds-tooltip" data-tip="Pro Builds"><div class="icon"></div><div class="__react_component_tooltip place-top type-dark " id="Pro Builds-tooltip" data-id="tooltip"></div></div><span>Pro Builds</span></a><a class="side-link side-nav-title" href="/lol/champions"><div data-for="Champions-tooltip" data-tip="Champions"><div class="icon"></div><div class="__react_component_tooltip place-top type-dark " id="Champions-tooltip" data-id="tooltip"></div></div><span>Champions</span></a></div><div class="filler"></div><div class="footer"><div id="footer" class="footer"><div class="footer-sitemap"><a href="/about">About</a><span> • </span><a href="/faq">FAQ</a><span> • </span><a href="/privacy-policy">Privacy Policy</a><a href="/privacy-shield">Privacy Shield</a><span> • </span><a href="/careers">Careers</a><span> • </span><a href="/terms-of-service">Terms of Service</a><span> • </span><a href="mailto:info@u.gg">Contact Us</a></div><div class="connect-with-us"><div class="social-media"><div class="social-media-links"><a href="https://www.facebook.com/UdotGG"><div class="react-svg social-media-icon"></div></a><a href="https://www.twitter.com/UdotGG"><div class="react-svg social-media-icon"></div></a><a href="https://www.instagram.com/UdotGG"><div class="react-svg social-media-icon"></div></a><a href="https://www.reddit.com/r/UGITGUD"><div class="react-svg social-media-icon"></div></a><a href="https://discord.gg/hR7vrQ6"><div class="react-svg social-media-icon"></div></a></div></div></div><div class="disclaimer"><div class="disclaimer-title">Outplayed, Inc. © 2019</div><span>U.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc. As an Amazon Associate I earn from qualifying purchases.</span></div></div></div></div></div><div id="main-content" class="collapsed "><div id="content"><div></div></div><div class="side-ads-container"><div id="side-ads_sticky-group" class="side-ads_sticky-group" style="position:sticky;top:82px;align-items:flex-start"></div></div></div></div><div></div></div></div>
-              <div id="react-portal"></div>
-              <div id="cookie-popup"></div>
-              <!-- CMP Dependencies -->
-              <div id="quantcast-cmp"></div>
-              <!-- End CMP Dependencies -->
-              <script id="ssr-preloaded-state">
-                // WARNING: See the following for security issues around embedding JSON in HTML:
-                // http://redux.js.org/recipes/ServerRendering.html#security-considerations
-                window.__PRELOADED_STATE__ = {"hydrate":{"hydrateInit":false},"app":{"isErrorPage":false,"adblock":true,"isDetectingAdblock":null,"permissions":null,"hasSetConsent":false,"settingInitConsent":true,"expandedSideNav":null,"theme":"dark"},"user":{"firstName":null,"lastName":null,"isVerified":null,"userState":null,"userSettings":null,"clientFavoriteChampions":[],"favoriteChampions":[],"clientFavoriteSummoners":[],"favoriteSummoners":[],"lolSettings":null,"loggingIn":false,"checkingSavedUser":true,"settingsNotification":false,"isFetchingBilling":true,"billing":null,"errorBilling":false,"verificationBar":false,"isPremium":false},"tooltip":{"show":false,"infoId":null,"infoType":null,"element":null,"event":null,"forceOrientation":null,"disableUpdate":false},"homepage":{"proHomepage":null,"fetchingProHomepage":true,"errorProHomepage":false,"keystoneHomepage":null,"fetchingKeystoneHomepage":true,"errorKeystoneHomepage":false},"champions":{"primaryRoles":null,"rolesByFilters":{},"isFetchingRolesByFilters":false,"proBuildsChart":null,"isFetchingProBuildsChart":true},"championResearch":{"championWinRates":null,"fetchingChampionWinRates":true,"championWinRatesError":false,"championDuos":null,"fetchingChampionDuos":true,"championDuosError":false,"combatStats":null,"fetchingCombatStats":true,"combatStatsError":false,"objectives":null,"fetchingObjectives":true,"objectivesError":false},"championProfile":{"championOverview":[null,null,null],"fetchingChampionOverview":false,"errorChampionOverview":false,"championRecBuild":[null,null,null],"fetchingChampionRecBuild":true,"errorChampionRecBuild":false,"championRankingStats":[null,null,null],"fetchingChampionRankingStats":true,"errorChampionRankingStats":false,"proBuild":null,"fetchingProBuild":true,"errorProBuild":false,"championDuos":[null,null],"fetchingChampionDuos":true,"errorChampionDuos":false,"championItems":[null,null,null],"fetchingChampionItems":true,"errorChampionItems":false,"championRunes":[null,null,null],"fetchingChampionRunes":true,"errorChampionRunes":false},"championCounters":{"championMatchups":[null,null],"fetchingMatchups":true,"errorMatchups":false,"championCounters":[null,null,null],"fetchingCounters":true,"errorCounters":false},"proBuilds":{"proBuild":null,"fetchingProBuild":true,"errorProBuild":false,"oneTrickBuild":null,"fetchingOneTrickBuild":true,"errorOneTrickBuild":false,"streamerBuild":null,"fetchingStreamerBuild":true,"errorStreamerBuild":false},"summoner":{"initializingRegion":true,"selectedRegion":null,"summonerBeingUpdated":null,"isUpdatingSummonerProfile":false,"summonerProfileIndex":null,"summonerProfile":null,"isFetchingSummonerProfile":true,"errorSummonerProfile":false,"sessionUuid":null,"currentHistoryPage":-1,"lastAvailabeHistoryPage":-1,"totalNumMatches":-1,"summonerMatchHistory":[],"isFetchingMatchHistory":false,"errorMatchHistory":false,"summonerIndivChampionIndex":null,"summonerIndivChampion":null,"isFetchingSummonerIndivChampion":false,"errorSummonerIndivChampion":false,"matchSummary":null,"summonerMatch":null,"isFetchingSummonerMatch":false,"searchSuggestions":null,"isFetchingSearchSuggestions":true,"errorSearchSuggestions":false},"favoriteProfile":{"favoriteProfile":null},"ws":{"uuid":"a966e43b-bb7b-47ec-ba14-97ccfb8c41d1","openedWS":{}},"ad":{"adIds":{},"isLargeAd":false},"riotStatic":{"isFetchingChampionIndiv":false,"isErrorChampionIndiv":false,"championIndiv":{},"isFetchingItems":false,"isErrorItems":false,"items":{},"isFetchingRunes":false,"isErrorRunes":false,"runes":{},"isFetchingSpells":false,"isErrorSpells":false,"spells":{}},"modals":{"login":false,"signup":false}}
-              </script>
-              <script src="https://static.u.gg/lol/static/js/main.a08a83db4470ae343115.js"></script>
-            </body>
-            <!-- Random Scripts -->
-            <script src="https://static.u.gg/temp/js/adsbygoogle.js" type="text/javascript"></script>
-            <script type="text/javascript">
-              var tRSiyHXsrPZQ;
-              if (document.getElementById('tRSiyHXsrPZQ')) {
-                tRSiyHXsrPZQ = 'No';
-              } else {
-                tRSiyHXsrPZQ = 'Yes';
-              }
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="google-site-verification" content="j4zQiYJnbrJpE0HwG-tyF8p1fGI2v57Mpi_Rggsy7g0" />
+  <meta name="google-site-verification" content="oxacdzrDmNQf5lF_X6iNVET6lQLONWGtDd5fJj41V3U" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- End Meta Tags -->
 
-              if (window.dataLayer) {
-                window.dataLayer.push({
-                  event: "adblock",
-                  category: "adblock",
-                  value: tRSiyHXsrPZQ
-                });
-              }
-            </script>
-            <!-- End Random Scripts -->
-          </html>
+  <title data-react-helmet="true"></title>
+
+</head>
+
+<body>
+  <div id="root">
+    <div class="desktop-container">
+      <div class="modal-manager"></div>
+      <div style="display:none;left:0;right:0;top:auto;bottom:0" class="tooltip-container">
+        <div style="postion:relative">
+          <div style="left:0;right:0" class="arrow arrow-down"></div>
+        </div>
+      </div>
+      <div id="masthead" class=" ">
+        <div class="logo-nav">
+          <div>
+            <div class="icon"></div>
+          </div><a style="display:flex;align-items:center" href="/"><img width="90" class="ugg-logo"
+              src="https://static.u.gg/lol/static/images/ugg/logo/ugg-logo.svg" alt="U.GG" /></a>
+        </div>
+        <div style="position:relative;width:632px;height:36px">
+          <div class="masthead-ugg-search-bar">
+            <div class="react-autosuggest__container react-autosuggest__container_placeholder"></div>
+            <div class="autosuggest-button">
+              <div></div>
+            </div>
+          </div>
+          <div id="search-bar-notification" class="notification_hide"><a class="thumbnail"
+              href="https://www.youtube.com/watch?v=pLxF_dgXCkM" target="_blank" rel="noopener noreferrer"><img
+                src="https://static.u.gg/lol/static/images/notification/tot_announcement.png"
+                alt="This or That Thumbnail" /></a>
+            <div class="dialogue"><img style="margin-left:18px;margin-right:12px"
+                src="https://static.u.gg/lol/static/images/notification/riot-logo.svg" alt="Riot Games logo" />
+              <div style="width:350px"><strong>Riot uses U.GG just like you do. </strong><span>As part of the official
+                  partnership, see our stats every week on This or That.</span></div>
+            </div>
+            <div class="close-notification">
+              <div class="react-svg"></div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center">
+          <div class="nav-dropdown"></div>
+        </div>
+      </div>
+      <div id="page-content">
+        <div id="side-nav-container" class="collapsed">
+          <div id="side-nav" class="collapsed ">
+            <div class="site-navigator"><a class="side-link side-nav-title" href="/">
+                <div data-for="Home-tooltip" data-tip="Home">
+                  <div class="icon"></div>
+                  <div class="__react_component_tooltip place-top type-dark " id="Home-tooltip" data-id="tooltip"></div>
+                </div><span>Home</span>
+              </a><a class="side-link side-nav-title" href="/lol/tier-list">
+                <div data-for="Tier List-tooltip" data-tip="Tier List">
+                  <div class="icon"></div>
+                  <div class="__react_component_tooltip place-top type-dark " id="Tier List-tooltip" data-id="tooltip">
+                  </div>
+                </div><span>Tier List</span>
+              </a><a class="side-link side-nav-title" href="/lol/pro-builds">
+                <div data-for="Pro Builds-tooltip" data-tip="Pro Builds">
+                  <div class="icon"></div>
+                  <div class="__react_component_tooltip place-top type-dark " id="Pro Builds-tooltip" data-id="tooltip">
+                  </div>
+                </div><span>Pro Builds</span>
+              </a><a class="side-link side-nav-title" href="/lol/champions">
+                <div data-for="Champions-tooltip" data-tip="Champions">
+                  <div class="icon"></div>
+                  <div class="__react_component_tooltip place-top type-dark " id="Champions-tooltip" data-id="tooltip">
+                  </div>
+                </div><span>Champions</span>
+              </a></div>
+            <div class="filler"></div>
+            <div class="footer">
+              <div id="footer" class="footer">
+                <div class="footer-sitemap"><a href="/about">About</a><span> • </span><a href="/faq">FAQ</a><span> •
+                  </span><a href="/privacy-policy">Privacy Policy</a><a href="/privacy-shield">Privacy Shield</a><span>
+                    • </span><a href="/careers">Careers</a><span> • </span><a href="/terms-of-service">Terms of
+                    Service</a><span> • </span><a href="mailto:info@u.gg">Contact Us</a></div>
+                <div class="connect-with-us">
+                  <div class="social-media">
+                    <div class="social-media-links"><a href="https://www.facebook.com/UdotGG">
+                        <div class="react-svg social-media-icon"></div>
+                      </a><a href="https://www.twitter.com/UdotGG">
+                        <div class="react-svg social-media-icon"></div>
+                      </a><a href="https://www.instagram.com/UdotGG">
+                        <div class="react-svg social-media-icon"></div>
+                      </a><a href="https://www.reddit.com/r/UGITGUD">
+                        <div class="react-svg social-media-icon"></div>
+                      </a><a href="https://discord.gg/hR7vrQ6">
+                        <div class="react-svg social-media-icon"></div>
+                      </a></div>
+                  </div>
+                </div>
+                <div class="disclaimer">
+                  <div class="disclaimer-title">Outplayed, Inc. © 2019</div><span>U.GG isn’t endorsed by Riot Games and
+                    doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or
+                    managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks
+                    of Riot Games, Inc. League of Legends © Riot Games, Inc. As an Amazon Associate I earn from
+                    qualifying purchases.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="main-content" class="collapsed ">
+          <div id="content">
+            <div></div>
+          </div>
+          <div class="side-ads-container">
+            <div id="side-ads_sticky-group" class="side-ads_sticky-group"
+              style="position:sticky;top:82px;align-items:flex-start"></div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="react-portal"></div>
+  <div id="cookie-popup"></div>
+  <!-- CMP Dependencies -->
+  <div id="quantcast-cmp"></div>
+  <!-- End CMP Dependencies -->
+  <script id="ssr-preloaded-state">
+    // WARNING: See the following for security issues around embedding JSON in HTML:
+    // http://redux.js.org/recipes/ServerRendering.html#security-considerations
+    window.__PRELOADED_STATE__ = {
+      "hydrate": {
+        "hydrateInit": false
+      },
+      "app": {
+        "isErrorPage": false,
+        "adblock": true,
+        "isDetectingAdblock": null,
+        "permissions": null,
+        "hasSetConsent": false,
+        "settingInitConsent": true,
+        "expandedSideNav": null,
+        "theme": "dark"
+      },
+      "user": {
+        "firstName": null,
+        "lastName": null,
+        "isVerified": null,
+        "userState": null,
+        "userSettings": null,
+        "clientFavoriteChampions": [],
+        "favoriteChampions": [],
+        "clientFavoriteSummoners": [],
+        "favoriteSummoners": [],
+        "lolSettings": null,
+        "loggingIn": false,
+        "checkingSavedUser": true,
+        "settingsNotification": false,
+        "isFetchingBilling": true,
+        "billing": null,
+        "errorBilling": false,
+        "verificationBar": false,
+        "isPremium": false
+      },
+      "tooltip": {
+        "show": false,
+        "infoId": null,
+        "infoType": null,
+        "element": null,
+        "event": null,
+        "forceOrientation": null,
+        "disableUpdate": false
+      },
+      "homepage": {
+        "proHomepage": null,
+        "fetchingProHomepage": true,
+        "errorProHomepage": false,
+        "keystoneHomepage": null,
+        "fetchingKeystoneHomepage": true,
+        "errorKeystoneHomepage": false
+      },
+      "champions": {
+        "primaryRoles": null,
+        "rolesByFilters": {},
+        "isFetchingRolesByFilters": false,
+        "proBuildsChart": null,
+        "isFetchingProBuildsChart": true
+      },
+      "championResearch": {
+        "championWinRates": null,
+        "fetchingChampionWinRates": true,
+        "championWinRatesError": false,
+        "championDuos": null,
+        "fetchingChampionDuos": true,
+        "championDuosError": false,
+        "combatStats": null,
+        "fetchingCombatStats": true,
+        "combatStatsError": false,
+        "objectives": null,
+        "fetchingObjectives": true,
+        "objectivesError": false
+      },
+      "championProfile": {
+        "championOverview": [null, null, null],
+        "fetchingChampionOverview": false,
+        "errorChampionOverview": false,
+        "championRecBuild": [null, null, null],
+        "fetchingChampionRecBuild": true,
+        "errorChampionRecBuild": false,
+        "championRankingStats": [null, null, null],
+        "fetchingChampionRankingStats": true,
+        "errorChampionRankingStats": false,
+        "proBuild": null,
+        "fetchingProBuild": true,
+        "errorProBuild": false,
+        "championDuos": [null, null],
+        "fetchingChampionDuos": true,
+        "errorChampionDuos": false,
+        "championItems": [null, null, null],
+        "fetchingChampionItems": true,
+        "errorChampionItems": false,
+        "championRunes": [null, null, null],
+        "fetchingChampionRunes": true,
+        "errorChampionRunes": false
+      },
+      "championCounters": {
+        "championMatchups": [null, null],
+        "fetchingMatchups": true,
+        "errorMatchups": false,
+        "championCounters": [null, null, null],
+        "fetchingCounters": true,
+        "errorCounters": false
+      },
+      "proBuilds": {
+        "proBuild": null,
+        "fetchingProBuild": true,
+        "errorProBuild": false,
+        "oneTrickBuild": null,
+        "fetchingOneTrickBuild": true,
+        "errorOneTrickBuild": false,
+        "streamerBuild": null,
+        "fetchingStreamerBuild": true,
+        "errorStreamerBuild": false
+      },
+      "summoner": {
+        "initializingRegion": true,
+        "selectedRegion": null,
+        "summonerBeingUpdated": null,
+        "isUpdatingSummonerProfile": false,
+        "summonerProfileIndex": null,
+        "summonerProfile": null,
+        "isFetchingSummonerProfile": true,
+        "errorSummonerProfile": false,
+        "sessionUuid": null,
+        "currentHistoryPage": -1,
+        "lastAvailabeHistoryPage": -1,
+        "totalNumMatches": -1,
+        "summonerMatchHistory": [],
+        "isFetchingMatchHistory": false,
+        "errorMatchHistory": false,
+        "summonerIndivChampionIndex": null,
+        "summonerIndivChampion": null,
+        "isFetchingSummonerIndivChampion": false,
+        "errorSummonerIndivChampion": false,
+        "matchSummary": null,
+        "summonerMatch": null,
+        "isFetchingSummonerMatch": false,
+        "searchSuggestions": null,
+        "isFetchingSearchSuggestions": true,
+        "errorSearchSuggestions": false
+      },
+      "favoriteProfile": {
+        "favoriteProfile": null
+      },
+      "ws": {
+        "uuid": "a966e43b-bb7b-47ec-ba14-97ccfb8c41d1",
+        "openedWS": {}
+      },
+      "ad": {
+        "adIds": {},
+        "isLargeAd": false
+      },
+      "riotStatic": {
+        "isFetchingChampionIndiv": false,
+        "isErrorChampionIndiv": false,
+        "championIndiv": {},
+        "isFetchingItems": false,
+        "isErrorItems": false,
+        "items": {},
+        "isFetchingRunes": false,
+        "isErrorRunes": false,
+        "runes": {},
+        "isFetchingSpells": false,
+        "isErrorSpells": false,
+        "spells": {}
+      },
+      "modals": {
+        "login": false,
+        "signup": false
+      }
+    }
+  </script>
+  <script src="https://static.u.gg/lol/static/js/main.a08a83db4470ae343115.js"></script>
+</body>
+<!-- Random Scripts -->
+<script src="https://static.u.gg/temp/js/adsbygoogle.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var tRSiyHXsrPZQ;
+  if (document.getElementById('tRSiyHXsrPZQ')) {
+    tRSiyHXsrPZQ = 'No';
+  } else {
+    tRSiyHXsrPZQ = 'Yes';
+  }
+
+  if (window.dataLayer) {
+    window.dataLayer.push({
+      event: "adblock",
+      category: "adblock",
+      value: tRSiyHXsrPZQ
+    });
+  }
+</script>
+<!-- End Random Scripts -->
+
+</html>
