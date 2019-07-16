@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,26 +19,24 @@
     <!-- Bootstrap NavBar -->
     <!-- Sourced from: https://www.codeply.com/go/LFd2SEMECH -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="LandingPage.html">
-            <img src="assets/navbarCustomButton.png" width="30" height="30" class="d-inline-block align-top"
-                style="mix-blend-mode: multiply;">
+            <img src="assets/navbarCustomButton.png" width="30" height="30" class="d-inline-block align-top" style="mix-blend-mode: multiply;">
             <span class="menu-collapsed">TFTactics</span>
         </a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
             <!-- Search start -->
-            
-                <input class="form-control mr-sm-2" type="search" placeholder="Search for Champions, Synergies or Summoners...." aria-label="Search">
-                <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-            
+
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for Champions, Team Compositions or Summoners...." aria-label="Search">
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+
             <!-- Search end -->
         </div>
-    </nav><!-- NavBar END -->
+    </nav>
+    <!-- NavBar END -->
 
 
     <!-- Bootstrap row -->
@@ -48,9 +45,9 @@
         <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
             <!-- Separator with title -->
             <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                    
-                </li>
-                <!-- /END Separator -->
+
+            </li>
+            <!-- /END Separator -->
             <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
             <!-- Bootstrap List Group -->
             <ul class="list-group">
@@ -60,35 +57,35 @@
                         <span class="menu-collapsed">Home</span>
                     </div>
                 </a>
-                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <a href="TierList.html" class="bg-dark list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <span class="fa fa-calendar fa-fw mr-3"></span>
                         <span class="menu-collapsed">Tier List</span>
                     </div>
                 </a>
-                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <a href="Leaderboard.html" class="bg-dark list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <span class="fa fa-envelope-o fa-fw mr-3"></span>
                         <span class="menu-collapsed">Leaderboards</span>
                     </div>
                 </a>
-                <a href="#" class="bg-dark list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-start align-items-center">
-                            <span class="fa fa-envelope-o fa-fw mr-3"></span>
-                            <span class="menu-collapsed">Spectate High Elo</span>
-                        </div>
+                <a href="UserProfile.html" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Summoner Profile</span>
+                    </div>
                 </a>
-                <a href="#" class="bg-dark list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-start align-items-center">
-                            <span class="fa fa-envelope-o fa-fw mr-3"></span>
-                            <span class="menu-collapsed">Summoner</span>
-                        </div>
+                <a href="CharacterPage.html" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Champion Details</span>
+                    </div>
                 </a>
-                <a href="#" class="bg-dark list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-start align-items-center">
-                            <span class="fa fa-envelope-o fa-fw mr-3"></span>
-                            <span class="menu-collapsed">Champion</span>
-                        </div>
+                <a href="HighElo.html" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Spectate High Elo</span>
+                    </div>
                 </a>
                 <!-- Separator without title -->
                 <li class="list-group-item sidebar-separator menu-collapsed"></li>
@@ -99,8 +96,10 @@
                         <span class="menu-collapsed">Help</span>
                     </div>
                 </a>
-            </ul><!-- List Group END-->
-        </div><!-- sidebar-container END -->
+            </ul>
+            <!-- List Group END-->
+        </div>
+        <!-- sidebar-container END -->
 
         <!-- MAIN -->
 
@@ -127,20 +126,19 @@
 
 
 
-        </div><!-- Main Col END -->
+        </div>
+        <!-- Main Col END -->
 
-    </div><!-- body-row END -->
+    </div>
+    <!-- body-row END -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="script.js">
     </script>
