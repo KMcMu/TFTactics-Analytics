@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -20,22 +19,18 @@
     <!-- Bootstrap NavBar -->
     <!-- Sourced from: https://www.codeply.com/go/LFd2SEMECH -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="LandingPage.html">
-            <img src="assets/navbarCustomButton.png" width="30" height="30" class="d-inline-block align-top"
-                style="mix-blend-mode: multiply;">
+            <img src="assets/navbarCustomButton.png" width="30" height="30" class="d-inline-block align-top" style="mix-blend-mode: multiply;">
             <span class="menu-collapsed">TFTactics</span>
         </a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
             <!-- Search start -->
 
-            <input class="form-control mr-sm-2" type="search"
-                placeholder="Search for Champions, Team Compositions or Summoners...." aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for Champions, Team Compositions or Summoners...." aria-label="Search">
             <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
 
             <!-- Search end -->
@@ -74,13 +69,13 @@
                         <span class="menu-collapsed">Leaderboards</span>
                     </div>
                 </a>
-                <a href="UserProfile.html" class="bg-dark list-group-item list-group-item-action">
+                <a href="UserProfile.html" class="bg-primary list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <span class="fa fa-envelope-o fa-fw mr-3"></span>
                         <span class="menu-collapsed">Summoner Profile</span>
                     </div>
                 </a>
-                <a href="CharacterPage.html" class="bg-primary list-group-item list-group-item-action">
+                <a href="CharacterPage.html" class="bg-dark list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <span class="fa fa-envelope-o fa-fw mr-3"></span>
                         <span class="menu-collapsed">Champion Details</span>
@@ -117,26 +112,59 @@
                 </div> -->
                 <div class="card-body">
                     <div class="mx-auto d-block">
-                        <img class="rounded-circle mx-auto d-block" src="assets/fluxayprofilep.png" alt="Card image cap"
-                            width="125s" height="125">
-                        <h1 class="text-center mt-2 mb-1">fluxay</h1>
-                        <div class="location text-sm-center"><span class="badge badge-pill badge-warning">Level
-                                167</span></div>
-                        <div class="location text-sm-center">
-                            <h4 class="fa fa-map-marker">Challenger I</h4>
-                        </div>
-                        <div class="location text-sm-center">
-                            <h4 class="fa fa-map-marker">590 LP</h4>
-                        </div>
+                        <img class="rounded-circle mx-auto d-block" src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/AurelionSol.png" alt="Card image cap" width="125s" height="125">
+                        <h1 class="text-center mt-2 mb-1">Aurelion Sol</h1>
                         <!-- <div class = "location text-sm-center"><span class="badge badge-pill badge-primary">Rank 1</span></div> -->
                     </div>
                     <hr>
                     <div class="card-text text-sm-center">
-                        <span>North America, 200 Matches Played.</span>
-                        <div class="location text-sm-center"><span class="badge badge-pill badge-success">74% Win
+                        <span>Statistics calculated from 283495 matches within the last patch cycle.</span>
+                        <div class="location text-sm-center"><span class="badge badge-pill badge-success">54% Pick
                                 Rate</span></div>
-                        <div class="location text-sm-center"><span class="badge badge-pill badge-success">95% Win Rate
-                                in the past 20 games</span></div>
+                        <div class="location text-sm-center"><span class="badge badge-pill badge-success">73% Win Rate
+                                overall</span></div>
+                        <div class="location text-sm-center"><span class="badge badge-pill badge-success">Sorcerer</span></div>
+                        <div class="location text-sm-center"><span class="badge badge-pill badge-success">Dragon</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-12 border-primary bg-white" style="margin-top:2em">
+                <div class="card-body">
+                    <span class="text-dark font-weight-bold">Best Items:</span>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card col-md-6 border-dark bg-light">
+                    <div class="card-body">
+                        <span class="border-dark"></span>
+                        <img src="assets/phantomdancer.webp" width="60" height="60" class="img-thumbnail border-dark">
+                        <small class="text-dark text-uppercase font-weight-bold">90% WR,<br> 30 Games</small>
+                    </div>
+                </div>
+                <div class="card col-md-6 border-dark bg-light">
+                    <div class="card-body">
+                        <span class="border-dark"></span>
+                        <img src="assets/rabadons.png" width="60" height="60" class="img-thumbnail border-dark">
+                        <small class="text-dark text-uppercase font-weight-bold">80% WR,<br> 40 Games</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card col-md-6 border-dark bg-light">
+                    <div class="card-body">
+                        <span class="border-dark"></span>
+                        <img src="assets/locket.webp" width="60" height="60" class="img-thumbnail border-dark">
+                        <small class="text-dark text-uppercase font-weight-bold">60% WR,<br> 20 Games</small>
+                    </div>
+                </div>
+                <div class="card col-md-6 border-dark bg-light">
+                    <div class="card-body">
+                        <span class="border-dark"></span>
+                        <img src="assets/shojin.png" width="60" height="60" class="img-thumbnail border-dark">
+                        <small class="text-dark text-uppercase font-weight-bold">70% WR,<br> 60 Games</small>
                     </div>
                 </div>
             </div>
@@ -150,7 +178,7 @@
 
             <div class="card col-md-12 border-primary bg-white">
                 <div class="card-body">
-                    <span class="text-dark font-weight-bold">Your General Statistics:</span>
+                    <span class="text-dark font-weight-bold">General Statistics:</span>
                 </div>
             </div>
 
@@ -160,16 +188,16 @@
                     <div class="card-body">
                         <div class="h4 mb-0">
                             <span class="count">
-                                <h1>+19</h1>
+                                <h1>54%</h1>
                             </span>
                         </div>
-                        <small class="text-light text-uppercase font-weight-bold">Win Streak</small>
+                        <small class="text-light text-uppercase font-weight-bold">Pick Rate</small>
                     </div>
                 </div>
                 <div class="card col-md-6 border-dark bg-info">
                     <div class="card-body">
                         <div class="h4 mb-0">
-                            <h1>1.3</h1>
+                            <h1>1.7</h1>
                         </div>
                         <small class="text-light text-uppercase font-weight-bold">Avg. Placement</small>
                     </div>
@@ -178,20 +206,20 @@
                     <div class="card-body">
                         <div class="h4 mb-0">
                             <span class="count">
-                                <h1>170</h1>
+                                <h1>73%</h1>
                             </span>
                         </div>
-                        <small class="text-light text-uppercase font-weight-bold">Total Wins</small>
+                        <small class="text-light text-uppercase font-weight-bold">Overall Winrate</small>
                     </div>
                 </div>
                 <div class="card col-md-6 border-dark bg-danger">
                     <div class="card-body">
                         <div class="h4 mb-0">
                             <span class="count">
-                                <h1>30</h1>
+                                <h1>2</h1>
                             </span>
                         </div>
-                        <small class="text-light text-uppercase font-weight-bold">Total Losses</small>
+                        <small class="text-light text-uppercase font-weight-bold">Origins</small>
                     </div>
                 </div>
             </div>
@@ -199,7 +227,7 @@
 
             <div class="card col-md-12 border-primary bg-white">
                 <div class="card-body">
-                    <span class="text-dark font-weight-bold">Your 4 best Teamcomps:</span>
+                    <span class="text-dark font-weight-bold">Four Best Team Compositions:</span>
                 </div>
             </div>
 
@@ -209,45 +237,45 @@
                     <div class="card-body">
                         <div class="h6 mb-0">
                             <span class="count">
-                                <span>6 Assassin,</span>
-                                <br>
-                                <span>3 Void</span>
+                                <span>6 Sorcerer,</span>
+                            <br>
+                            <span>3 Elementalist</span>
                             </span>
                         </div>
-                        <small class="text-light text-uppercase font-weight-bold">90% WR,<br> 80 Games</small>
+                        <small class="text-light text-uppercase font-weight-bold">83% WR,<br> 80 Games</small>
                     </div>
                 </div>
                 <div class="card col-md-6 border-dark bg-secondary">
                     <div class="card-body">
                         <div class="h6 mb-0">
                             <span class="count">
-                                <span>6 Assassin,</span>
-                                <br>
-                                <span>4 Ninja</span>
+                                <span>3 Sorcerer,</span>
+                            <br>
+                            <span>3 Elementalist</span>
                             </span>
                         </div>
-                        <small class="text-light text-uppercase font-weight-bold">80% WR,<br> 40 Games</small>
+                        <small class="text-light text-uppercase font-weight-bold">73% WR,<br> 40 Games</small>
                     </div>
                 </div>
                 <div class="card col-md-6 border-dark bg-info">
                     <div class="card-body">
                         <div class="h6 mb-0">
                             <span class="count">
-                                <span>6 Glacial,</span>
-                                <br>
-                                <span>4 Ranger</span>
+                                <span>3 Sorcerer,</span>
+                            <br>
+                            <span>4 Wild</span>
                             </span>
                         </div>
-                        <small class="text-light text-uppercase font-weight-bold">66% WR,<br> 30 Games</small>
+                        <small class="text-light text-uppercase font-weight-bold">68% WR,<br> 30 Games</small>
                     </div>
                 </div>
                 <div class="card col-md-6 border-dark bg-danger">
                     <div class="card-body">
                         <div class="h6 mb-0">
                             <span class="count">
-                                <span>6 Demon,</span>
-                                <br>
-                                <span>3 Sorcerer</span>
+                                <span>6 Sorcerer,</span>
+                            <br>
+                            <span>2 Dragon</span>
                             </span>
                         </div>
                         <small class="text-light text-uppercase font-weight-bold">50% WR,<br> 50 Games</small>
@@ -256,10 +284,120 @@
             </div>
             <!-- Second row end -->
 
-
+            <div class="col-lg col-md-6 border-dark" style="margin-top:2em; float: right;">
+                <div class="col border-dark">
+                    <!-- Bootstrap table-->
+                    <div class="table table-striped table-borderless table-hover border-dark">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Has Synergy With:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <!--Game 1 Row-->
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Shyvana.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingThree"></div>
+                                            <span>
+                                                <img class="ChampionCostThree" src="images/3coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Lulu.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingTwo"></div>
+                                            <span>
+                                                <img class="ChampionCostTwo" src="images/2coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Ahri.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingTwo"></div>
+                                            <span>
+                                                <img class="ChampionCostTwo" src="images/2coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Karthus.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingFive"></div>
+                                            <span>
+                                                <img class="ChampionCostFive" src="images/5coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Morgana.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingThree"></div>
+                                            <span>
+                                                <img class="ChampionCostThree" src="images/3coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Veigar.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingThree"></div>
+                                            <span>
+                                                <img class="ChampionCostThree" src="images/3coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/Kassadin.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingOne"></div>
+                                            <span>
+                                                <img class="ChampionCostOne" src="images/1coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ChampionFrameOuter">
+                                            <div class="ChampionFrameInner">
+                                                <img src="https://ddragon.leagueoflegends.com/cdn/9.13.1/img/champion/TwistedFate.png" class="ChampionImage" />
+                                            </div>
+                                            <div class="ChampionTierRingTwo"></div>
+                                            <span>
+                                                <img class="ChampionCostTwo" src="images/2coin.png">
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <!--End of Game 1 Row-->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
+    </div>
+    <!-- Table for stats end -->
 
+    </div>
 
     </div>
 </body>
